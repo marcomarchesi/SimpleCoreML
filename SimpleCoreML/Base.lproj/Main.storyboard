@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3zY-0D-lhE">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bu-JK-iqS">
+                                <rect key="frame" x="67" y="91" width="890" height="780"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3zY-0D-lhE" secondAttribute="trailing" id="2SC-rw-HOn"/>
+                            <constraint firstItem="1bu-JK-iqS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="8KM-dK-qf7"/>
+                            <constraint firstItem="3zY-0D-lhE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9kl-rp-MpR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1bu-JK-iqS" secondAttribute="bottom" constant="451" id="BUO-dX-pGj"/>
+                            <constraint firstItem="1bu-JK-iqS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="T3V-MO-NDU"/>
+                            <constraint firstItem="3zY-0D-lhE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VL4-G5-vo5"/>
+                            <constraint firstAttribute="bottom" secondItem="3zY-0D-lhE" secondAttribute="bottom" id="Wxg-Ot-UI2"/>
+                            <constraint firstItem="1bu-JK-iqS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJU-DY-ffy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="classificationLabel" destination="1bu-JK-iqS" id="Kf6-3c-pIl"/>
+                        <outlet property="imageView" destination="3zY-0D-lhE" id="EZL-Yq-g4D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.9375" y="169.10688140556368"/>
+        </scene>
+    </scenes>
+</document>
